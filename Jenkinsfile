@@ -4,7 +4,7 @@ pipeline {
   stage('Git Checkout') {
             steps {
                 script {
-                    git branch: 'JenkinsDependencyCheckTest.git',
+                    git branch: 'master',
                         credentialsId: '3103labs',
                         url: 'https://github.com/raymousray/JenkinsDependencyCheckTest.git'
                 }
