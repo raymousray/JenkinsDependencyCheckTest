@@ -14,7 +14,7 @@ pipeline {
       steps {
         script {
           // Run OWASP DependencyCheck with additional arguments
-          dependencyCheck additionalArguments: " -o './' -s './' -f 'ALL'--format HTML --format JSON", odcInstallation: 'ODC'
+          dependencyCheck additionalArguments: " -o './' -s './' --format HTML --format JSON", odcInstallation: 'ODC'
         }
       }
     }
